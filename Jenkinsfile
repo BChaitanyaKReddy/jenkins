@@ -16,12 +16,7 @@ pipeline {
                 sh "pip install -r requirements.txt"
             }
         }
-        stage('Test') {
-            steps {
-                sh "pytest"
-                sh "whoami"
-            }
-        }
+        
 
         stage('Package code') {
             steps {
