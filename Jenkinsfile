@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: '', branch: 'main'
+                git url: 'https://github.com/BChaitanyaKReddy/jenkins.git', branch: 'main'
                 sh "ls -ltr"
             }
         }
